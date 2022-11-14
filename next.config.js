@@ -2,7 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  basePath: '/admiral'
+  // basePath: '/admiral',
+  experimental: {
+    appDir: true,
+  },
 }
 
 module.exports = nextConfig
