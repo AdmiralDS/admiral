@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function Header() {
   return (
-    <header className='container mx-auto flex justify-between'>
+    <header className='flex justify-between mt-[24px]'>
       <div>
         <Link href='/'>
           <svg
@@ -64,7 +64,7 @@ function Header() {
 
 
       <div className="flex ">
-        <Link href='#'>
+        <Link href='#' className="mr-[40px]">
           <svg
             width='32'
             height='32'
