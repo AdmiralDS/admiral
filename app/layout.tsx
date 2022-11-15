@@ -4,12 +4,18 @@ import "./globals.css";
 import localFont from "@next/font/local";
 import "@admiral-ds/fonts/VTBGroupUI.css";
 import Content from "./Content";
+import Worth from "./Worth";
 import styled from "styled-components";
-import image from "/public/bigLogoAnimation.png";
 // const myFont = localFont({ src: "@admiral-ds/fonts/VTBGroupUI.css" });
 const Container = styled.div`
-  max-width: 1280px;
-  background-image: url('');
+  background-color: #000000;
+  padding-top: 0 10px;
+`;
+
+const ContainerContent = styled.div`
+  max-width: 1300px;
+  margin: 0 auto;
+  background: url("bigLogoAnimation.png") no-repeat;
 `;
 
 export default function RootLayout({ children }) {
@@ -20,11 +26,14 @@ export default function RootLayout({ children }) {
         <link rel='icon' href='/favicon.ico' />
       </head>
       <body>
-        <Container style={{ backgroundImage:`url(${image})`}}>
-          <Header />
-          {children}
-          <Content />
+        <Container>
+          <ContainerContent>
+            <Header />
+            {children}
+            <Content />
+          </ContainerContent>
         </Container>
+        <Worth />
       </body>
     </html>
   );

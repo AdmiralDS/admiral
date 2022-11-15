@@ -2,10 +2,17 @@
 
 import styled from "styled-components";
 
+const TextContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+
+`;
+
 const TextContent = styled.div`
   max-width: 500px;
   display: flex;
   flex-direction: column;
+  height: 100vh;
 `;
 
 const Title = styled.h1`
@@ -38,7 +45,7 @@ const SubTitle = styled.h2`
 
 export default function Content() {
   return (
-    <div className='flex justify-end mr-[110px] mt-[220px]'>
+    <TextContainer >
       <TextContent>
         <Title>Дизайн-система Адмирал</Title>
         <SubTitle>
@@ -47,6 +54,6 @@ export default function Content() {
           тренды
         </SubTitle>
       </TextContent>
-    </div>
+    </TextContainer>
   );
 }
