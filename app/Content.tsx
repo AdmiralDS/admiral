@@ -1,11 +1,13 @@
 "use client";
 
 import styled from "styled-components";
+import Figma from "./Components/Figma";
+import Github from "./Components/Github";
 
 const TextContainer = styled.div`
   display: flex;
   justify-content: flex-end;
-
+  margin-top: 220px;
 `;
 
 const TextContent = styled.div`
@@ -43,17 +45,29 @@ const SubTitle = styled.h2`
   color: #ffffff;
 `;
 
+const Icons = styled.div`
+  display: flex;
+  justify-content: flex-end;
+`;
+
 export default function Content() {
   return (
-    <TextContainer >
-      <TextContent>
-        <Title>Дизайн-система Адмирал</Title>
-        <SubTitle>
-          Мы предоставляем пользователям набор инструментов для долгосрочного
-          развития продукта, анализируя потребности клиентов и изменяющиеся
-          тренды
-        </SubTitle>
-      </TextContent>
-    </TextContainer>
+    <>
+      <Icons>
+        <Figma />
+        <Github />
+      </Icons>
+
+      <TextContainer>
+        <TextContent>
+          <Title>Дизайн-система Адмирал</Title>
+          <SubTitle>
+            Мы предоставляем пользователям набор инструментов для долгосрочного
+            развития продукта, анализируя потребности клиентов и изменяющиеся
+            тренды
+          </SubTitle>
+        </TextContent>
+      </TextContainer>
+    </>
   );
 }

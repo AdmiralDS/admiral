@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export default function Logo() {
   return (
-    <>
+    <div style={{display: 'inline'}}>
       <Link href='/'>
         <svg
           width='179'
@@ -60,6 +60,6 @@ export default function Logo() {
         </svg>
       </Link>
       <h1 className='text-[#ffffff]'>сделано в иннотех </h1>
-    </>
+    </div>
   );
 }
