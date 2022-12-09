@@ -1,6 +1,23 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import type { AppProps } from 'next/app';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import { DropdownProvider, LIGHT_THEME } from '@admiral-ds/react-ui';
+import '@admiral-ds/fonts/VTBGroupUI.css';
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #E5E5E5;
+  }
+`;
+
+export default function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    <DropdownProvider>
+      <ThemeProvider theme={LIGHT_THEME}>
+        <GlobalStyle />
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </DropdownProvider>
+  );
 }
