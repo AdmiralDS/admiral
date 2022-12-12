@@ -20,7 +20,7 @@ const Container = styled.div`
   right: 0;
 `;
 const Head = styled.div`
-  font-family: 'Loos Wide';
+  font-family: 'Loos Wide Medium', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 90px;
@@ -31,7 +31,7 @@ const Head = styled.div`
   color: #ffffff;
 `;
 const Descr = styled.div`
-  font-family: 'VTB Group UI';
+  font-family: 'VTB Group UI' ,sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;

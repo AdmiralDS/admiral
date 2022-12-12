@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Loos Wide Light';
+    src: url('Loos Latin, Cyrillic Wide-Light-Web.eot');
+    src: url('Loos Latin, Cyrillic Wide-Light-Web.eot#iefix') format('embedded-opentype'), url('Loos Latin, Cyrillic Wide-Light-Web.woff2') format('woff2'), url('Loos Latin, Cyrillic Wide-Light-Web.woff') format('woff'), url('Loos Latin, Cyrillic Wide-Light-Web.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Loos Wide Medium';
+    src: url('Loos Latin, Cyrillic Wide-Medium-Web.eot');
+    src: url('Loos Latin, Cyrillic Wide-Medium-Web.eot#iefix') format('embedded-opentype'), url('Loos Latin, Cyrillic Wide-Medium-Web.woff2') format('woff2'), url('Loos Latin, Cyrillic Wide-Medium-Web.woff') format('woff'), url('Loos Latin, Cyrillic Wide-Medium-Web.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Loos Wide Bold';
+    src: url('Loos Latin, Cyrillic Wide-Bold-Web.eot');
+    src: url('Loos Latin, Cyrillic Wide-Bold-Web.eot#iefix') format('embedded-opentype'), url('Loos Latin, Cyrillic Wide-Bold-Web.woff2') format('woff2'), url('Loos Latin, Cyrillic Wide-Bold-Web.woff') format('woff'), url('Loos Latin, Cyrillic Wide-Bold-Web.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
