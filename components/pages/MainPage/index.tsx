@@ -60,8 +60,8 @@ export const MainPage = () => {
       <PositionedMainBackground />
       <StyledImage src={imageUrl} alt={'pic'} />
       <Box>
-        <Head>Дизайн-система Адмирал</Head>
-        <Descr>
+        <Head>Дизайн-система Адмирал<title>Дизайн-система Адмирал</title></Head>
+        <Descr style={{marginTop: 40}}>
           Мы предоставляем пользователям набор инструментов для долгосрочного развития продукта, анализируя потребности
           клиентов и изменяющиеся тренды
         </Descr>
